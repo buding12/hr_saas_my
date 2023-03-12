@@ -25,11 +25,13 @@ export default {
   },
   actions: {
     // 登录写到异步
+    // 不能用try/catch原因是：如果登陆失败，将报错的异常抛出
     async login ({ commit }) {
       const res = await login({
         mobile: '13800000002',
         password: '123456'
       })
+      // 如果登陆失败，下面的代码就不会执行，原因：login()返回一个失败的promise对象
       commit('SET_TOKEN', res.data)
       // 把token存到vuex中
       // this.$store.commit('user/SET_TOKEN', res.data)

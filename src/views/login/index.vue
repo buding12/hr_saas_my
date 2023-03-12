@@ -15,7 +15,7 @@ export default {
   computed: {},
   watch: {},
   created () {
-    this.login()
+    // this.login()
   },
   mounted () {},
   methods: {
