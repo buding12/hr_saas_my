@@ -1,7 +1,7 @@
 <template>
   <div>
-    <button @click="changeToken">改变token</button>
-    <button @click="delToken">删除token</button>
+    <!-- <button @click="changeToken">改变token</button>
+    <button @click="delToken">删除token</button> -->
     <!-- 一级路由 -->
     <router-view />
   </div>

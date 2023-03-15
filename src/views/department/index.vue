@@ -1,13 +1,10 @@
 <template>
-  <div>
-    login
-    <button @click="login">登录</button>
-  </div>
+  <div>department 动态路由</div>
 </template>
 
 <script>
 export default {
-  name: 'login-page',
+  name: 'department-page',
   props: {},
   components: {},
   data () {
@@ -22,14 +19,6 @@ export default {
   },
   mounted () {},
   methods: {
-    async login () {
-      try {
-        await this.$store.dispatch('user/login')
-        this.$router.push('/layout')
-      } catch (error) {
-
-      }
-    }
   }
 }
 </script>
